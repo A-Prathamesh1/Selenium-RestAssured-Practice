@@ -29,11 +29,13 @@ public class UpdateUser {
 		
 		given()// content type is being sent as header then we can use ContentType.JSON
 				.header("Authorization", "Bearer " + bearerToken)
-				.contentType("application/json").pathParam("id", id)
+				.contentType("application/json")
+				.pathParam("id", id)
 				.body(data.toString())
 		.when()
 			.put("https://gorest.co.in/public/v2/users/{id}")
-			.then()
+		.then()
+			.statusCode(200)
 			.log().all();
 
 	}

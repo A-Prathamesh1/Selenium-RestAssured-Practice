@@ -27,12 +27,13 @@ public class CreateUser {
 		String bearerToken = "33c0467f6bbd626f380179d9f4e6c067b2a29454b479dd4f088adf9cde18356a";
 		
 		int id = given()//content type is being sent as header then we can use ContentType.JSON
-			.header("Authorization","Bearer "+ bearerToken)
+			.header("Authorization","Bearer "+ bearerToken) // we have to give space after bearer as token needs to be concatenated 
 			.contentType("application/json")
 			.body(data.toString())
 		.when()
 			.post("https://gorest.co.in/public/v2/users")
-			.jsonPath().getInt("id");
+			.jsonPath()
+			.getInt("id");
 		//int id = (int) context.getAttribute("user_id");
 		context.getSuite().setAttribute("user_id", id);
 

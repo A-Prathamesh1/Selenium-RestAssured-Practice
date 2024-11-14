@@ -8,9 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SwitchingBetweenWindows {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 
 		System.setProperty("webdriver.chrome.driver",

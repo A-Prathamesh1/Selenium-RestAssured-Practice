@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-05T18:17:26 IST" name="PetSuite" finished-at="2024-02-05T18:17:37 IST" duration-ms="10933">
+  <suite started-at="2024-10-08T19:39:18 IST" name="Default suite" finished-at="2024-10-08T19:39:18 IST" duration-ms="68">
     <groups>
     </groups>
-    <test started-at="2024-02-05T18:17:26 IST" name="PetTest" finished-at="2024-02-05T18:17:37 IST" duration-ms="10933">
-      <class name="api.test.UserTest2">
-        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.UserTest2@229f66ed]" started-at="2024-02-05T18:17:26 IST" name="setUpData" finished-at="2024-02-05T18:17:28 IST" duration-ms="1400" status="PASS">
+    <test started-at="2024-10-08T19:39:18 IST" name="Default test" finished-at="2024-10-08T19:39:18 IST" duration-ms="68">
+      <class name="interviewTask.PriorityAttributeDemo">
+        <test-method signature="btest1()[pri:0, instance:interviewTask.PriorityAttributeDemo@5b12b668]" started-at="2024-10-08T19:39:18 IST" name="btest1" finished-at="2024-10-08T19:39:18 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpData -->
-        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTest2@229f66ed]" started-at="2024-02-05T18:17:28 IST" name="testPostUser" finished-at="2024-02-05T18:17:32 IST" duration-ms="4201" status="PASS">
+        </test-method> <!-- btest1 -->
+        <test-method signature="ctest3()[pri:0, instance:interviewTask.PriorityAttributeDemo@5b12b668]" started-at="2024-10-08T19:39:18 IST" name="ctest3" finished-at="2024-10-08T19:39:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUser -->
-        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTest2@229f66ed]" started-at="2024-02-05T18:17:32 IST" name="testGetUserByName" finished-at="2024-02-05T18:17:33 IST" duration-ms="1089" status="PASS">
+        </test-method> <!-- ctest3 -->
+        <test-method signature="atest2()[pri:1, instance:interviewTask.PriorityAttributeDemo@5b12b668]" started-at="2024-10-08T19:39:18 IST" name="atest2" finished-at="2024-10-08T19:39:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetUserByName -->
-        <test-method signature="testUpdateUserByName()[pri:3, instance:api.test.UserTest2@229f66ed]" started-at="2024-02-05T18:17:33 IST" name="testUpdateUserByName" finished-at="2024-02-05T18:17:36 IST" duration-ms="2521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateUserByName -->
-        <test-method signature="testDeleteUserByName()[pri:4, instance:api.test.UserTest2@229f66ed]" started-at="2024-02-05T18:17:36 IST" name="testDeleteUserByName" finished-at="2024-02-05T18:17:37 IST" duration-ms="1141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteUserByName -->
-      </class> <!-- api.test.UserTest2 -->
-    </test> <!-- PetTest -->
-  </suite> <!-- PetSuite -->
+        </test-method> <!-- atest2 -->
+      </class> <!-- interviewTask.PriorityAttributeDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

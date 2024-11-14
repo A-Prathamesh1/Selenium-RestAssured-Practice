@@ -16,8 +16,12 @@ public class GetAndPostExamples {
 	public void testGet() {
 		baseURI = "https://reqres.in/api";
 
-		given().get("/users?page=2").then().statusCode(200).body("data[4].first_name", equalTo("George"))
-				.body("data.first_name", hasItems("Michael", "Lindsay", "Tobias", "Byron", "George", "Rachel"));
+		given()
+			.get("/users?page=2")
+		.then()
+			.statusCode(200)
+			.body("data[4].first_name", equalTo("George"))
+			.body("data.first_name", hasItems("Michael", "Lindsay", "Tobias", "Byron", "George", "Rachel"));
 	}
 
 	@Test
@@ -38,7 +42,15 @@ public class GetAndPostExamples {
 
 		baseURI = "https://reqres.in/api";
 
-		given().header("Content-Type", "application/json").contentType(ContentType.JSON).accept(ContentType.JSON)
-				.body(req.toJSONString()).when().post("users").then().statusCode(201).log().all();
+		given()
+			.header("Content-Type", "application/json")
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.body(req.toJSONString())
+		.when()
+			.post("users")
+		.then()
+			.statusCode(201)
+			.log().all();
 	}
 }

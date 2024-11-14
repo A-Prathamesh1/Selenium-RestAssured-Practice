@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.UserTest">
+      <class name="designPatternSeleniumBuilder.RegistrationPageTest">
         <methods>
-          <include name="testUpdateUserByName"/>
-          <include name="testDeleteUserByName"/>
-          <include name="setUpData"/>
+          <include name="regsiterationTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- api.test.UserTest -->
+      </class> <!-- designPatternSeleniumBuilder.RegistrationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
